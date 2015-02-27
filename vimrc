@@ -149,6 +149,34 @@ imap <Leader>= <Esc> <C-w>=
 
 " }}}
 
+" Filetypes {{{
+
+" Enable indentation by plugins.
+filetype plugin indent on
+
+" Makefile uses real tabs.
+au FileType make setl noexpandtab
+
+" Consider all these ruby files.
+au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,Vagrantfile} set ft=ruby
+
+" Consider all these as javascript files.
+au BufRead,BufNewFile {*.json,*.es6} set ft=javascript
+
+" PHP
+au FileType php setl softtabstop=4 shiftwidth=4 tabstop=4 expandtab colorcolumn=120 textwidth=120
+
+" Javascript
+au FileType javascript setl softtabstop=2 shiftwidth=2 tabstop=2 expandtab colorcolumn=120 textwidth=120
+
+" Coffeescript
+au FileType coffee setl softtabstop=2 shiftwidth=2 tabstop=2 expandtab colorcolumn=80 textwidth=80
+
+" Ruby, SCSS, SASS.
+au FileType {eruby,ruby,sass,scss} setl softtabstop=2 shiftwidth=2 tabstop=2 expandtab colorcolumn=80
+
+" }}}
+
 " Plugins {{{
 
 " NERDTree

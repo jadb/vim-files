@@ -31,3 +31,18 @@
 [submodule "bundle/scratch"]
 	path = bundle/scratch
 	url = git://github.com/duff/vim-scratch.git
+[submodule "bundle/php"]
+	path = bundle/php
+	url = git://github.com/vim-scripts/php.vim--Garvin
+[submodule "bundle/coffeescript"]
+	path = bundle/coffeescript
+	url = git://github.com/kchmck/vim-coffee-script
+[submodule "bundle/javascript"]
+	path = bundle/javascript
+	url = git://github.com/pangloss/vim-javascript
+[submodule "bundle/less"]
+	path = bundle/less
+	url = git://github.com/groenewege/vim-less
+[submodule "bunlde/editorconfig"]
+	path = bundle/editorconfig
+	url = git://github.com/editorconfig/editorconfig-vim
