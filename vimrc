@@ -62,6 +62,8 @@ set wrap
 set lbr
 set textwidth=0
 set cursorline
+set splitright
+set splitbelow
 
 " Don't redraw when macros are executing.
 set lazyredraw
