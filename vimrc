@@ -203,6 +203,12 @@ elseif executable('ack')
 else
 	let s:ctrlp_fallback = 'find %s -type f'
 endif
+let g:ctrlp_user_command = {
+	\ 'types': {
+		\ 1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
+	\ },
+	\ 'fallback': s:ctrlp_fallback
+\ }
 
 " NERDTree
 let NERDTreeIgnore=['\~$']
