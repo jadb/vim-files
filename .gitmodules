@@ -16,3 +16,18 @@
 [submodule "bundle/git-gutter"]
 	path = bundle/git-gutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = git://github.com/bling/vim-airline.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = git://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/scratch"]
+	path = bundle/scratch
+	url = git://github.com/duff/vim-scratch.git
