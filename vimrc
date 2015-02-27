@@ -1,0 +1,151 @@
+" Disable Vi compatibility
+set nocompatible
+
+" Include pathogen
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
+call pathogen#helptags()
+
+" GUI configuration {{{
+
+if has('gui_running')
+  " Custom font
+  set guifont=Source\ Code\ Pro:h13
+  " Disable toolbar.
+  set guioptions=-T
+endif
+
+" }}}
+
+" IDE configuration {{{
+
+" Define leader
+let mapleader=','
+
+" Enable syntax highlighting
+syntax enable
+
+" Set character encoding
+set encoding=utf-8
+
+" Show line numbers and rulers
+set number
+set ruler
+
+" Use 256 colors
+set t_Co=256
+
+" Whitespace
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set list listchars=tab:▸\ ,eol:¬,trail:·
+set noeol
+set autoindent
+
+" Allow backspacing over everything in insert mode.
+set backspace=indent,eol,start
+
+" Window settings.
+set wrap
+set lbr
+set textwidth=0
+set cursorline
+
+" Don't redraw when macros are executing.
+set lazyredraw
+
+" Use modeline overrides
+set modeline
+set modelines=10
+
+" Status bar.
+set laststatus=2
+
+" Use the system clipbard
+set clipboard=unnamed
+
+" Tab completion for files and other command line features.
+set wildmenu
+set wildmode=list:longest,list:full
+set wildignore+=.git,node_modules/,vendor/gems/
+
+" Spell checking, configure and turn off.
+set spell spelllang=en_ca
+set nospell
+
+" Disable swap files (generally things are in VCS).
+set noswapfile
+
+" Disable file backups.
+set nobackup
+set nowritebackup
+
+" Persistent undos
+if !&diff
+  set undodir=~/.vim/backup
+  set undofile
+endif
+
+" }}}
+
+" Search configuration {{{
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set gdefault
+nnoremap / /\v
+vnoremap / /\v
+set grepprg=ack\ --column
+set grepformat=%f:%l:%c:%m
+
+" Clear search highlighting.
+map <Leader><Space> :nohl<CR>
+
+" }}}
+
+" Autocommands {{{
+
+" Save on blur
+au FocusLost * :wa
+au CursorHold,CursorHoldI * silent! wa
+
+" Remember cursor location in file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+   \| exe "normal g'\"" | endif
+endif
+
+" }}}
+
+" Keybindings {{{
+
+" Inserts the path of current buffer into a command
+" Command mode: CTRL+P
+cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
+
+" Remap j/k for long lines
+nmap j gj
+nmap k gk
+
+" Remaps split window j/k/h/l
+nmap <C-j> <C-W>j
+nmap <C-k> <C-W>k
+nmap <C-h> <C-W>h
+nmap <C-l> <C-W>l
+
+" Adjusts viewports/splits to same size
+map <Leader>= <C-w>=
+imap <Leader>= <Esc> <C-w>=
+
+" }}}
+
+" Plugins {{{
+
+" NERDTree
+let NERDTreeIgnore=['\~$']
+map <Leader>, :NERDTreeToggle<CR>
+
+" }}}
