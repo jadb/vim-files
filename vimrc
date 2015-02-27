@@ -54,6 +54,9 @@ set autoindent
 " Allow backspacing over everything in insert mode.
 set backspace=indent,eol,start
 
+" Abbrev. of messages (avoids 'hit enter')
+set shortmess+=filmnrxoOtT
+
 " Window settings.
 set wrap
 set lbr
