@@ -25,6 +25,10 @@ let mapleader=','
 " Enable syntax highlighting
 syntax enable
 
+" Color scheme.
+set background=dark
+colorscheme solarized
+
 " Set character encoding
 set encoding=utf-8
 
@@ -149,3 +153,4 @@ let NERDTreeIgnore=['\~$']
 map <Leader>, :NERDTreeToggle<CR>
 
 " }}}
+
