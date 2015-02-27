@@ -188,9 +188,26 @@ au FileType {eruby,ruby,sass,scss} setl softtabstop=2 shiftwidth=2 tabstop=2 exp
 
 " Plugins {{{
 
+" CtrlP
+let g:ctrlp_working_path_mode = 'ra'
+if (has('win16') || has('win32') || has('win64'))
+	let s:ctrlp_fallback = 'dir %s /-n /b /s /a-d'
+elseif executable('ag')
+	let s:ctrlp_fallback = 'ag %s --nocolor -l -g ""'
+elseif executable('ack-grep')
+	let s:ctrlp_fallback = 'ack-grep %s --nocolor -f'
+elseif executable('ack')
+	let s:ctrlp_fallback = 'ack %s --nocolor -f'
+else
+	let s:ctrlp_fallback = 'find %s -type f'
+endif
+
 " NERDTree
 let NERDTreeIgnore=['\~$']
-map <Leader>, :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen=1
+let NERDTreeMouseMode=2
+let NERDTreeShowHidden=1
+map <C-e> :NERDTreeToggle<CR>
 
 " }}}
 
