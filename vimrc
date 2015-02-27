@@ -122,6 +122,9 @@ if has("autocmd")
    \| exe "normal g'\"" | endif
 endif
 
+" Force markdown, see http://github.com/tpope/vim-markdown
+au BufNewFile,BufReadPost *.md set filetype=markdown
+
 " }}}
 
 " Keybindings {{{
