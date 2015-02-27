@@ -190,6 +190,8 @@ au FileType {eruby,ruby,sass,scss} setl softtabstop=2 shiftwidth=2 tabstop=2 exp
 
 " CtrlP
 let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = {
+	\ 'dir': '\.git$' }
 if (has('win16') || has('win32') || has('win64'))
 	let s:ctrlp_fallback = 'dir %s /-n /b /s /a-d'
 elseif executable('ag')
