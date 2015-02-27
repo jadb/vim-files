@@ -25,6 +25,10 @@ let mapleader=','
 " Enable syntax highlighting
 syntax enable
 
+" Enable mouse.
+set mouse=a
+set mousehide
+
 " Color scheme.
 set background=dark
 colorscheme solarized
