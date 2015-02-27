@@ -6,6 +6,7 @@ My personal Vi IMproved installation.
 
 - [airline](https://github.com/bling/vim-airline) - Lean & mean status/tabline for vim that's light as air.
 - [auto-pairs](https://github.com/jiangmiao/auto-pairs) - Insert or delete brackets, parens, quotes in pair.
+- [ctrlp](https://github.com/kien/ctrlp.vim) - Full path fuzzy file, buffer, mru, tag, etc. finder.
 - [editorconfig](https://github.com/editorconfig/editorconfig-vim) - Editorconfig support for Vi.
 - [fugitive](https://github.com/tpope/vim-fugitive) - Best `git` wrapper.
 - [git-gutter](https://github.com/airblade/vim-gitgutter) - Show `git diff` in the gutter.
@@ -28,6 +29,12 @@ My personal Vi IMproved installation.
 - [php](https://github.com/vim-scripts/php.vim--Garvin)
 
 ## Install
+
+Install Vi IMproved and required packages:
+
+```sh
+apt-get install vim vim-gui-common vim-runtime
+```
 
 Clone this repository into your home directory and install:
 
