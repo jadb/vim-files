@@ -49,3 +49,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim
+[submodule "bundle/easygrep"]
+	path = bundle/easygrep
+	url = https://github.com/dkprice/vim-easygrep
