@@ -7,7 +7,7 @@ My personal Vi IMproved installation.
 - [airline](https://github.com/bling/vim-airline) - Lean & mean status/tabline for vim that's light as air.
 - [auto-pairs](https://github.com/jiangmiao/auto-pairs) - Insert or delete brackets, parens, quotes in pair.
 - [ctrlp](https://github.com/kien/ctrlp.vim) - Full path fuzzy file, buffer, mru, tag, etc. finder.
-- [easygre](https://github.com/dkprice/vim-easygrep) - Fast and easy find and replace across multiple files.
+- [easygrep](https://github.com/dkprice/vim-easygrep) - Fast and easy find and replace across multiple files.
 - [editorconfig](https://github.com/editorconfig/editorconfig-vim) - Editorconfig support for Vi.
 - [fugitive](https://github.com/tpope/vim-fugitive) - Best `git` wrapper.
 - [git-gutter](https://github.com/airblade/vim-gitgutter) - Show `git diff` in the gutter.
