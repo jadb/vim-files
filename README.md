@@ -11,6 +11,7 @@ My personal Vi IMproved installation.
 - [editorconfig](https://github.com/editorconfig/editorconfig-vim) - Editorconfig support for Vi.
 - [fugitive](https://github.com/tpope/vim-fugitive) - Best `git` wrapper.
 - [git-gutter](https://github.com/airblade/vim-gitgutter) - Show `git diff` in the gutter.
+- [nerdcommenter](https://github.com/scrooloose/nerdcommenter) - Comments, docblocks, etc.
 - [nerdtree](https://github.com/scrooloose/nerdtree) - Tree view.
 - [pathogen](https://github.com/tpope/vim-pathogen) - Manages `runtimepath` to autoload bundles.
 - [scratch](https://github.com/duff/vim-scratch) - Temporary scratch buffer.

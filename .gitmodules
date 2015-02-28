@@ -52,3 +52,6 @@
 [submodule "bundle/easygrep"]
 	path = bundle/easygrep
 	url = https://github.com/dkprice/vim-easygrep
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
